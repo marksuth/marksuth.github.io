@@ -3,8 +3,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 20vh;
-    padding-left:15vw;
+    text-align: center;
+    padding-top: 25vh;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
     height: 100%;
