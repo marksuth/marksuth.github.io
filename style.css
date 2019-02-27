@@ -1,19 +1,15 @@
 html {
-  margin: 0;
+  background: url(background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
   padding: 0;
 }
 body {
-  background-image: url(background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   text-align: center;
   padding-top: 25vh;
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
-  height: 100%;
-  overflow: hidden;
 }
 h1 {
   font-size: 9vh;
