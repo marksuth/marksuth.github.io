@@ -1,0 +1,6 @@
+[submodule "themes/cooper"]
+	path = themes/cooper
+	url = https://github.com/marksuth/cooper.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
