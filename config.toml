@@ -23,7 +23,6 @@ theme = "cooper"
   customCodeStyle = true
   customBlockquoteStyle = true
   showPostSummary = true
-  googleAnalytics = "UA-123456789-1"
   cookieConsent = false
   includeBootstrapJs = false
   faviconSafariPinnedTabColor = "#214154"
