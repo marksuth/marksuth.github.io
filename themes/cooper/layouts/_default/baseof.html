@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+{{ partial "head.html" . }}
+
+<body>
+{{ partial "nav.html" . }}
+  
+  <div class="container">
+    <article>
+      {{ block "main" . }}{{ end }}
+    </article>
+  </div>
+
+{{ partial "mastodon-js.html" . }}
+{{ partial "cookie-consent.html" . }}
+{{ $js := "js/app.js" -}}
+  <script src="{{ $js | absURL }}"></script>
+</body>
+
+</html>
