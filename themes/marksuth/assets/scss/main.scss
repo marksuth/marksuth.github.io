@@ -35,7 +35,7 @@ a:hover {
 }
 
 main {
-    min-height: 86vh;
+    min-height: 80vh;
     align-content: center;
 }
 
@@ -54,7 +54,7 @@ h1 {
 
 #social-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     list-style: none;
     padding: .25rem .25rem .25rem 0;
     margin-top: 1rem;
@@ -62,7 +62,7 @@ h1 {
 
 #social-links a {
     color: var(--text-muted);
-    margin: .25rem;
+    margin: .25rem .5rem;
     font-weight: bold;
 }
 
@@ -74,19 +74,11 @@ h1 {
     margin-left: 0
 }
 
-@media (min-width: 992px) {
-    #social-links {
-        justify-content: start
-    }
 
-    #social-links > a {
-        margin: .25rem .5rem
-    }
-}
-
-footer, header {
-    font-size: .9rem;
+footer {
+    font-size: .95rem;
     padding: .5rem 0;
+    line-height: 3;
     color: var(--text-muted);
 }
 
@@ -96,8 +88,19 @@ footer, header {
     }
 
     a {
-        color: var(--text-muted);
+        background: linear-gradient(to top, var(--body), color-mix(in srgb, var(--body), white 15%));
+        color: var(--text);
+        border: 1px solid var(--text-muted);
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        display: inline-block;
         font-weight: bold;
+
+        &:hover {
+            background: linear-gradient(to top, var(--body), color-mix(in srgb, var(--body), white 10%));
+        }
+
     }
 
 
