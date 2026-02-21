@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <div class="h-card">
+        <h1 class="p-name">{{ site.Title }}</h1>
+        <p class="p-note">
+            <span class="p-locality">Leicester</span>, <span class="p-country-name">UK</span>
+            <span class="p-pronouns">(He/Him)</span>
+        </p>
+        <nav id="social-links" aria-label="Social links">
+            {{ with site.Params.email }}
+                <a class="u-email" href="mailto:{{ . }}" rel="me">Email</a>
+            {{ end }}
+            {{ range site.Params.social_links }}
+                <a href="{{ .url }}" rel="{{ .rel | default "me" }}">{{ .name }}</a>
+            {{ end }}
+        </nav>
+    </div>
+{{ end }}

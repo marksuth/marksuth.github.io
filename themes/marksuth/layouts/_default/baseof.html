@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+    {{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Params.custom_meta }}
+    <meta name="{{ .name }}" content="{{ .content }}">
+    {{ end }}
+
+    {{ $style := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ with site.Params.favicon }}<link rel="icon" type="image/svg+xml" href="{{ . | absURL }}"/>{{ end }}
+
+    {{ range site.Params.social_links }}
+    <link rel="{{ .rel | default "me" }}" href="{{ .url }}">
+    {{ end }}
+
+    {{ with site.Params.webmention }}<link rel="webmention" href="{{ . }}">{{ end }}
+    {{ with site.Params.pingback }}<link rel="pingback" href="{{ . }}">{{ end }}
+    {{ with site.Params.authorization_endpoint }}<link rel="authorization_endpoint" href="{{ . }}">{{ end }}
+    {{ with site.Params.token_endpoint }}<link rel="token_endpoint" href="{{ . }}">{{ end }}
+    {{ with site.Params.microsub }}<link rel="microsub" href="{{ . }}">{{ end }}
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.Title }}">
+    <meta property="og:url" content="{{ site.BaseURL }}">
+</head>
+<body>
+<header>
+    <a class="u-url u-uid" href="{{ site.BaseURL }}"><img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" height="48" width="128"></a>
+</header>
+<main>
+{{ block "main" . }}
+{{ .Content }}
+{{ end }}
+    <div class="explainer">
+        <h2>Where is everything?</h2>
+        <p>For various reasons, I've decided to take stock of things and take a more simple approach for the time being.</p>
+        <p>If I get some spark of inspiration, I may create a new site, but for now, this is pretty much it.</p>
+        <p>Cheers, <br>Mark</p>
+    </div>
+</main>
+
+<footer>
+    <small>&copy; {{ site.Title }} {{ now.Year }}. 🏳️‍🌈</small>
+</footer>
+</body>
+</html>
