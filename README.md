@@ -1,6 +1,6 @@
-# IndiePass Site
+# marksuth.dev
 
-The source code for the [IndiePass](https://indiepass.app/) website. Built with [Hugo](https://gohugo.io/).
+The source code for [marksuth.dev](https://marksuth.dev/). Built with [Hugo](https://gohugo.io/).
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ To work on this project locally, you will need:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/IndiePass/indiepass.github.io.git
+   git clone https://github.com/marksuth/marksuth.github.io.git
    cd marksuth.github.io
    ```
 
@@ -32,14 +32,14 @@ To work on this project locally, you will need:
 ## Project Structure
 
 - `content/`: Contains the markdown files for the site pages.
-- `layouts/`: Custom layouts for the site.
-- `themes/indiepass/`: The main theme containing assets and templates.
+- `layouts/`: Custom layouts for the site (if any).
+- `themes/marksuth/`: The main theme containing assets, templates, and SCSS.
 - `static/`: Static files like images and icons.
 - `hugo.toml`: The main configuration file.
 
 ## Deployment
 
-The site is automatically built and deployed to GitHub Pages via GitHub Actions whenever changes are pushed to the `main` branch.
+The site is automatically built and deployed to GitHub Pages via GitHub Actions whenever changes are pushed to the `live` branch.
 
-- **URL:** [https://indiepass.app/](https://indiepass.app/)
+- **URL:** [https://marksuth.dev/](https://marksuth.dev/)
 - **Workflow:** `.github/workflows/hugo.yaml`
