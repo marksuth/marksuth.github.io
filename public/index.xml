@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mark Sutherland</title><link>https://marksuth.dev/</link><description>Recent content on Mark Sutherland</description><generator>Hugo</generator><language>en-gb</language><atom:link href="https://marksuth.dev/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mark Sutherland</title>
+    <link>https://marksuth.dev/</link>
+    <description>Recent content on Mark Sutherland</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 01 Apr 2026 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://marksuth.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now</title>
+      <link>https://marksuth.dev/now/</link>
+      <pubDate>Wed, 01 Apr 2026 12:00:00 +0000</pubDate>
+      <guid>https://marksuth.dev/now/</guid>
+      <description>&lt;p&gt;This is a &lt;a href=&#34;https://nownownow.com/about&#34;&gt;now page&lt;/a&gt;, detailing what I am currently focused on.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-basics&#34;&gt;The Basics&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I currently live in Leicester, UK&lt;/li&gt;&#xA;&lt;li&gt;I have a black cat called Lara (as in Croft)&lt;/li&gt;&#xA;&lt;li&gt;I work as a Senior Developer &amp;amp; Cloud Architect at &lt;a href=&#34;https://cwa.co.uk/&#34;&gt;CWA&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;m a certified Google Cloud Architect&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-are-my-interests&#34;&gt;What are my Interests?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;technical&#34;&gt;Technical&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Web development (mainly PHP) and design&lt;/li&gt;&#xA;&lt;li&gt;DevOps and Cloud Architecture&lt;/li&gt;&#xA;&lt;li&gt;Automation and simplifying complex processes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;irl&#34;&gt;IRL&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I row most weekends with Leicester Rowing Club&lt;/li&gt;&#xA;&lt;li&gt;After climbing Snowdown in March 2026, I&amp;rsquo;ve recently re-discovered a love of hiking&lt;/li&gt;&#xA;&lt;li&gt;Generally trying to live a more sustainable, healthy lifestyle&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;m a keen coffee drinker, particularly beans&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;m slowly building up my vinyl collection&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-do-i-use&#34;&gt;What do I Use?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;devices&#34;&gt;Devices&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Google Pixel 9 Pro&lt;/li&gt;&#xA;&lt;li&gt;2024 Macbook Air&lt;/li&gt;&#xA;&lt;li&gt;AMD Ryzen based mini server running Proxmox VE that I run a mix of VMs on, along with a couple of development boxes.&lt;/li&gt;&#xA;&lt;li&gt;Gaming-wise, I have an XBOX Series X, but not gaming that much these days&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;For web development, my editor of choice is &lt;a href=&#34;https://www.jetbrains.com/phpstorm/&#34;&gt;JetBrains PhpStorm&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Music wise I switched to Apple Music at the start of 2026, having used Spotify since 2008&lt;/li&gt;&#xA;&lt;li&gt;Hosting wise, I tend to use Fasthosts, although this site is currently on GitHub pages&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;(This page was last updated in April 2026.)&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://marksuth.dev/privacy/</link>
+      <pubDate>Wed, 01 Apr 2026 12:00:00 +0000</pubDate>
+      <guid>https://marksuth.dev/privacy/</guid>
+      <description>&lt;p&gt;Privacy Policy for marksuth.dev&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Disclaimer: This was generated using Gemini, while I don&amp;rsquo;t condone using AI for blogging etc. this is here for legal purposes, and I will likely refine it to be more &amp;ldquo;human&amp;rdquo; at some point&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This Privacy Policy outlines how I handle information when you visit my site. &lt;strong&gt;TLDR: I do not track you, I do not use cookies, and I do not collect your personal information.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

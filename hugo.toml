@@ -4,6 +4,21 @@ title = 'Mark Sutherland'
 theme = 'marksuth'
 disableKinds = ["taxonomy", "term"]
 
+[menus]
+  [[menus.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menus.main]]
+    name = "Now"
+    url = "/now"
+    weight = 20
+[[menus.footer]]
+name = "Privacy Policy"
+url = "/privacy"
+weight = 10
+
+
 [params]
   description = 'Personal website of Mark Sutherland'
   favicon = 'favicon.svg'

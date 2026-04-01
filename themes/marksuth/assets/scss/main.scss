@@ -8,6 +8,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: system-ui, sans-serif;
+
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     padding: 0 1rem;
+    text-wrap: pretty;
 }
 
 @media (min-width: 1440px) {
@@ -25,13 +27,13 @@ body {
 }
 
 a {
-    color: var(--text);
+    color: var(--text-muted);
     transition: .3s all ease;
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--text-muted);
+    text-decoration: underline;
 }
 
 main {
@@ -39,19 +41,41 @@ main {
     align-content: center;
 }
 
-h1 {
-    font-size: 15vw;
-    line-height: 1;
+h1, h2, h3 {
+    font-size: 4rem;
+    line-height: 1.5;
     letter-spacing: -2px;
     font-weight: 500;
     margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.intro {
+    h1 {
+        font-size: 15vw;
+        line-height: 1;
+    }
 }
 
 .p-note {
     font-size: 2rem;
     margin: 0;
 }
-
+article {
+    h1 {
+        line-height: 2;
+    }
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
 #social-links {
     display: flex;
     justify-content: flex-start;
@@ -86,25 +110,24 @@ footer {
     h1 {
         font-size: 5rem;
     }
+}
 
-    a {
-        background: linear-gradient(to top, var(--body), color-mix(in srgb, var(--body), white 15%));
-        color: var(--text);
-        border: 1px solid var(--text-muted);
-        border-radius: 0.25rem;
-        padding: 0.5rem 1rem;
-        margin-top: 1rem;
-        display: inline-block;
-        font-weight: bold;
+.btn {
+    background: linear-gradient(to top, var(--body), color-mix(in srgb, var(--body), white 15%));
+    color: var(--text);
+    border: 1px solid var(--text-muted);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: bold;
 
-        &:hover {
-            background: linear-gradient(to top, var(--body), color-mix(in srgb, var(--body), white 10%));
-        }
-
+    &:hover {
+        background: linear-gradient(to top, var(--body), color-mix(in srgb, var(--body), white 10%));
     }
 
-
 }
+
 .explainer {
     text-wrap: balance;
     border: 1px solid var(--text-muted);
@@ -112,4 +135,87 @@ footer {
     border-radius: 0.5rem;
     margin: 5vh 0;
     max-width: max-content;
+}
+
+#navbar {
+    background: color-mix(in srgb, var(--body) 70%, transparent);
+    backdrop-filter: blur(10px);
+    color: var(--text);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    & .tube {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    input.inline-toggle {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & a {
+            margin: 0 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: 0.3s all ease;
+
+            &:hover {
+                color: var(--text-inverted);
+                transition: 0.3s all ease;
+            }
+        }
+    }
+
+    .inline-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    #navbar {
+        .inline-toggle {
+            border: 1px var(--text) solid;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            display: block;
+            margin: 0 1rem;
+        }
+
+        .inline-toggle:checked + nav {
+            display: block;
+        }
+
+        nav {
+
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: calc(100%);
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            font-size: 1.5rem;
+            height: 100vh;
+            z-index: 1000;
+            text-align: center;
+            background: color-mix(in srgb, var(--body) 70%, transparent);
+            backdrop-filter: blur(10px);
+
+            & a {
+                display: block;
+                margin: 0.5rem 0;
+                line-height: 3;
+            }
+        }
+    }
 }

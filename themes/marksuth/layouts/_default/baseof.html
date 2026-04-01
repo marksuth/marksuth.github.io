@@ -19,14 +19,30 @@
     {{ with site.Params.authorization_endpoint }}<link rel="authorization_endpoint" href="{{ . }}">{{ end }}
     {{ with site.Params.token_endpoint }}<link rel="token_endpoint" href="{{ . }}">{{ end }}
     {{ with site.Params.microsub }}<link rel="microsub" href="{{ . }}">{{ end }}
+    {{ with .OutputFormats.Get "RSS" }}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ site.Title }}">
+    {{ end }}
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ site.Title }}">
     <meta property="og:url" content="{{ site.BaseURL }}">
     <meta name="theme-color" content="#232b2b">
 </head>
 <body>
+<nav id="navbar" aria-label="main-navigation">
+    <div class="tube">
+        <a class="logo u-url u-uid" href="{{ site.BaseURL }}"><img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" height="48" width="128"></a>        <section>
+            <label for="main-nav" class="inline-toggle btn">Menu</label>
+            <input type="checkbox" id="main-nav" class="inline-toggle">
+            <nav>
+                {{ range site.Menus.main }}
+                <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            </nav>
+        </section>
+    </div>
+</nav>
 <header>
-    <a class="u-url u-uid" href="{{ site.BaseURL }}"><img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" height="48" width="128"></a>
+
 </header>
 <main>
 {{ block "main" . }}
@@ -34,7 +50,10 @@
 {{ end }}
 </main>
 <footer>
-    <small>&copy; {{ site.Title }} {{ now.Year }}. 🏳️‍🌈</small>
+    <small>&copy; {{ site.Title }} {{ now.Year }}. 🏳️‍🌈</small><br>
+    {{ range site.Menus.footer }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
 </footer>
 <script async src="https://scripts.withcabin.com/hello.js"></script>
 </body>
