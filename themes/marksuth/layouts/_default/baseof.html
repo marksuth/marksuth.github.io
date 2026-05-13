@@ -30,15 +30,7 @@
 <body>
 <nav id="navbar" aria-label="main-navigation">
     <div class="tube">
-        <a class="logo u-url u-uid" href="{{ site.BaseURL }}"><img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" height="48" width="128"></a>        <section>
-            <label for="main-nav" class="inline-toggle btn">Menu</label>
-            <input type="checkbox" id="main-nav" class="inline-toggle">
-            <nav>
-                {{ range site.Menus.main }}
-                <a href="{{ .URL }}">{{ .Name }}</a>
-                {{ end }}
-            </nav>
-        </section>
+        <a class="logo u-url u-uid" href="{{ site.BaseURL }}"><img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" height="48" width="128"></a>
     </div>
 </nav>
 <header>
